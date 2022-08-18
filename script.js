@@ -1,6 +1,4 @@
-var alertify = require('alertify.js');
-const form = document.getElementById('form-generate');
-
+const form = document.getElementById('generate-form');
 const qr = document.getElementById('qrcode');
 
 // Button submit
@@ -14,7 +12,7 @@ const onGenerateSubmit = (e) => {
 
   // Validate url
   if (url === '') {
-    alertify.alert("Enter a URL");
+    alert('Please enter a URL');
   } else {
     showSpinner();
     // Show spinner for 1 sec
